@@ -6,8 +6,13 @@ __all__ = ('StateMachine', 'StateDefinition', 'StateTransition')
 from collections import defaultdict
 import logging
 
-from django_states.exceptions import (TransitionNotFound, TransitionValidationError,
-                                UnknownState, TransitionException, MachineDefinitionException)
+from django_states.exceptions import (
+    TransitionNotFound,
+    TransitionValidationError,
+    UnknownState,
+    TransitionException,
+    MachineDefinitionException
+)
 
 
 logger = logging.getLogger(__name__)
